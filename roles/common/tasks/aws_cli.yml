@@ -13,3 +13,6 @@
 
     - name: Install AWS CLI
       pip: name=awscli state=latest
+
+    - name: Configure autocomplete
+      copy: src=../files/aws dest=/etc/bash_completion.d owner=root group=root mode=0644
