@@ -1,0 +1,6 @@
+---
+
+- name: top
+  command: top -b -n 1
+  register: top
+- debug: var=top.stdout_lines

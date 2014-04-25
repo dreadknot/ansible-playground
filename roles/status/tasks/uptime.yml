@@ -1,0 +1,6 @@
+---
+
+- name: run uptime
+  shell: uptime
+  register: uptime
+- debug: var=uptime.stdout_lines

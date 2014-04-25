@@ -1,0 +1,4 @@
+---
+- include: uptime.yml
+- include: top.yml
+- include: ss.yml

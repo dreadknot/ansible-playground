@@ -1,0 +1,7 @@
+---
+
+- name: get status of all
+  hosts: all
+
+  roles:
+    - status

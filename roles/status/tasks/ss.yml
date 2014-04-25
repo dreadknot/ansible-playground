@@ -1,0 +1,6 @@
+---
+
+- name: run ss
+  shell: ss
+  register: ss
+- debug: var=ss.stdout_lines
