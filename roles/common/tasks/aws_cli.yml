@@ -1,0 +1,16 @@
+---
+    - name: install pip
+      apt: pkg=python-pip state=latest
+      sudo: yes
+
+    - name: Install boto
+      pip: name=boto state=latest
+      sudo: yes
+
+    - name: Install AWS CLI
+      pip: name=awscli state=latest
+      sudo: yes
+
+    - name: Configure autocomplete
+      copy: src=aws dest=/etc/bash_completion.d owner=root group=root mode=0644
+      sudo: yes
