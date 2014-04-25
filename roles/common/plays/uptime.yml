@@ -1,0 +1,10 @@
+---
+- name: uptime 
+  hosts: all
+  user: ubuntu
+  sudo: True
+  gather_facts: False
+
+  tasks:
+    - name: run uptime
+      shell: uptime

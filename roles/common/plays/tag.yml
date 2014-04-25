@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local
+  gather_facts: False
+
+  tasks:
+  - name: tag a resource
+    local_action: ec2_tag resource=i-17936c36 region=us-east-1 state=present
+    args:
+      tags:
+        Name: ubervol
+        env: prod
